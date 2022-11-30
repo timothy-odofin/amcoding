@@ -6,6 +6,15 @@ package org.example.linkedList;
  *
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  * * * */
+
+/**
+ * Complexity Analysis
+ *
+ * Time complexity : O(\max(m, n))O(max(m,n)). Assume that mm and nn represents the length of l1l1 and l2l2 respectively, the algorithm above iterates at most \max(m, n)max(m,n) times.
+ *
+ * Space complexity : O(\max(m, n))O(max(m,n)). The length of the new list is at most \max(m,n) + 1max(m,n)+1.
+ * * * */
+
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
@@ -25,11 +34,21 @@ class Solution {
         }
         return dummyHead.next;
     }
+
+
     /**
      * Complexity Analysis
      *
-     * Time complexity : O(\max(m, n))O(max(m,n)). Assume that mm and nn represents the length of l1l1 and l2l2 respectively, the algorithm above iterates at most \max(m, n)max(m,n) times.
+     *     Time Complexity: O(N)O(N), where NN is the number of nodes in the given list.
      *
-     * Space complexity : O(\max(m, n))O(max(m,n)). The length of the new list is at most \max(m,n) + 1max(m,n)+1.
+     *     Space Complexity: O(1)O(1), the space used by slow and fast.
      * * * */
+    public ListNode middleNode(ListNode head) {
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
 }
