@@ -24,4 +24,27 @@ package org.example.array;
  * To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
  * * * */
 public class CourseSchedule {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+
+        if (numCourses <= 0 || prerequisites == null || prerequisites.length==0)
+            return false;
+        int[] preCourse = new int[numCourses];
+
+        for (int i = 0; i < numCourses; i++) {
+            preCourse[i] = i;
+        }
+
+        for (int[] course : prerequisites) {
+            int want = course[0];
+            int pre = course[1];
+            preCourse[want] = pre;
+
+            while (pre != preCourse[pre]) {
+                pre = preCourse[pre];
+                if (pre == want)
+                    return false;
+            }
+        }
+        return true;
+    }
 }

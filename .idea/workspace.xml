@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8a9f781-2912-4997-b5f2-51a3035cfdfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MeetingRoomSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/CloseToOrigin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/EvaluateReversePolishNotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/InsertInterval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/MaxSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Interval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mycomparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/BackspaceCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TrieNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/ImplementTrie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/array/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/array/CourseSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +139,7 @@
       <workItem from="1668669450282" duration="4735000" />
       <workItem from="1669777252276" duration="6854000" />
       <workItem from="1670223302448" duration="5171000" />
-      <workItem from="1670307922483" duration="1333000" />
+      <workItem from="1670307922483" duration="2528000" />
     </task>
     <servers />
   </component>
