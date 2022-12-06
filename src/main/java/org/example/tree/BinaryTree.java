@@ -1,7 +1,13 @@
 package org.example.tree;
 
 import org.example.linkedList.ListNode;
+import org.example.model.Node;
 import org.example.model.TreeNode;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Given the root of a binary tree, invert the tree, and return its root.
@@ -135,4 +141,82 @@ public class BinaryTree {
         }
         return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
+
+
+    /**
+     * Given the root of a binary tree, return the level order traversal of its nodes' values.
+     * * (i.e., from left to right, level by level).
+     *Thoughts:
+     *
+     * This is a bread first search order traversal.
+     *
+     * Use two queues to remember which level currently at.
+     *  
+     * * * Complexity
+     *
+     *     Time complexity:
+     *     O(n)
+     *
+     *     Space complexity:
+     *     O(n)*/
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        Queue<TreeNode> qv = new LinkedList<TreeNode>();
+        List<List<Integer>> result = new LinkedList<List<Integer>>();
+        if (root == null) {
+            return result;
+        }
+        qv.add(root);
+        while (qv.size() > 0) {
+            int n = qv.size();
+            List<Integer> add = new LinkedList<Integer>();
+            for (int i = 0; i < n; i ++) {
+                TreeNode node = qv.remove();
+                add.add(node.val);
+                if (node.left !=null) {
+                    qv.add(node.left);
+                }
+                if (node.right !=null) {
+                    qv.add(node.right);
+                }
+            }
+            result.add(add);
+        }
+        return result;
+    }//l
+
+    /**
+     * Given a reference of a node in a connected undirected graph.
+     *
+     * Return a deep copy (clone) of the graph.
+     *
+     * Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
+     *
+     * class Node {
+     *     public int val;
+     *     public List<Node> neighbors;
+     * }
+     * * * */
+    public Node cloneGraph(Node node) {
+        if(node == null) return node;
+        Node[] visited = new Node[101];
+        Arrays.fill(visited, null);
+        Node copy = new Node(node.val);
+        dfs(copy, node, visited);
+        return copy;
+    }
+
+    private void dfs(Node copy, Node node, Node[] visited){
+        visited[node.val] = copy;
+
+        for(Node n: node.neighbors){
+            if(visited[n.val] == null){
+                Node newNode = new Node(n.val);
+                visited[n.val]=newNode;
+                dfs(newNode, n, visited);
+            }
+
+            copy.neighbors.add(visited[n.val]);
+        }
+    }
+
 }
