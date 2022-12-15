@@ -28,19 +28,19 @@ public class ArraySubset {
         }
     }
 
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
+    public List<List<Integer>> subsetsWithoutDup(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
-        backtrackDup(list, new ArrayList<>(), nums, 0);
+        backtrackoutDup(list, new ArrayList<>(), nums, 0);
         return list;
     }
 
-    private void backtrackDup(List<List<Integer>> list, List<Integer> tempList, int [] nums, int start){
+    private void backtrackoutDup(List<List<Integer>> list, List<Integer> tempList, int [] nums, int start){
         list.add(new ArrayList<>(tempList));
         for(int i = start; i < nums.length; i++){
             if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates
             tempList.add(nums[i]);
-            backtrackDup(list, tempList, nums, i + 1);
+            backtrackoutDup(list, tempList, nums, i + 1);
             tempList.remove(tempList.size() - 1);
         }
     }
