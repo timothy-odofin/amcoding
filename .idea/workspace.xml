@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a9f781-2912-4997-b5f2-51a3035cfdfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UniquePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/MatricSpiral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/PartisionEqualsSubsetForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/disu/AccountMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/LongestPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/StringTo32BitIntegerConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/WordBreak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tree/BinaryTreeRightSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/array/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/array/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/permutation_combination/ArraySubset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/permutation_combination/ArraySubset.java" afterDir="false" />
-    </list>
+    <list default="true" id="a8a9f781-2912-4997-b5f2-51a3035cfdfa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +140,7 @@
       <workItem from="1670631244636" duration="648000" />
       <workItem from="1670706944424" duration="147000" />
       <workItem from="1670826954603" duration="2764000" />
-      <workItem from="1671082332293" duration="4778000" />
+      <workItem from="1671082332293" duration="5155000" />
     </task>
     <servers />
   </component>
